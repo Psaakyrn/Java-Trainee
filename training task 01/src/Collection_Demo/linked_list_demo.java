@@ -7,8 +7,9 @@ public class linked_list_demo {
 		// TODO Auto-generated method stub
 			LinkedList<String> l1 = new LinkedList<String>();
 			l1.add("Tim");
-			l1.add("Toms");
 			l1.add("tam");
+			l1.add("tam");
+			l1.add("Tim");
 			System.out.println("After add: "+l1);
 			
 			l1.add(1,"yumm");
@@ -31,7 +32,7 @@ public class linked_list_demo {
 			l3.add("Wuud");
 			
 			l1.addAll(2,l3);
-			System.out.println(l3);
+			System.out.println(l1);
 		
 			System.out.println();
 			System.out.println("+++++ remove +++++");
@@ -42,6 +43,10 @@ public class linked_list_demo {
 			System.out.println("After remove(2): " +l1);
 			l1.removeAll(l3);
 			System.out.println("After removeAll(emp3): " +l1);
+			l1.removeFirstOccurrence("Tim");
+			System.out.println("After removeFirstOccurrence(\"Tim\"): " +l1);			
+			l1.removeLastOccurrence("tam");
+			System.out.println("After removeLastOccurrence(\"tam\"): " +l1);			
 			l1.clear();
 			System.out.println("After clear: " +l1);			
 	}

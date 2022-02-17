@@ -25,23 +25,34 @@ public class set_demo {
 		}
 		
 		System.out.println();
-		System.out.println("+++++ ArrayList +++++");
-		ArrayList<String> emp1 = new ArrayList();
+		System.out.println("+++++ LinkedHashSet +++++");
+		LinkedHashSet<String> emp1 = new LinkedHashSet<String>();
 		emp1.add("1212");
 		emp1.add("Cook");
 		emp1.add("Book");
 		emp1.add("Dook");
+		emp1.add("Dook");
+		emp1.add(null);
 		emp1.add("????!?");
 		
-		for(String oo:emp1) {
-			System.out.println(oo);
-		}
+		System.out.println("Base: "+emp1);
+		emp1.remove("Book");
+		System.out.println("After remove(): "+emp1);
 		
-		Collections.sort(emp1);
-		System.out.println("After sort:");
-		for(String oo:emp1) {
-			System.out.println(oo);
-		}
+		LinkedHashSet<String> emp2 = new LinkedHashSet<String>();
+		emp2.add("Dook");
+		emp2.add("bbbbbb");
+		emp1.addAll(emp2);
+		System.out.println("After addAll(): "+emp1);
+		
+		emp1.removeAll(emp2);
+		System.out.println("After removeAll(): "+emp1);
+	
+		emp1.clear();
+		System.out.println("After clear(): "+emp1);
+	
+	
+		
 		
 	
 		
