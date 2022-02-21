@@ -1,6 +1,6 @@
 package Collection_Demo;
 import java.util.*;
-import java.io.*;
+//import java.io.*;
 
 class Stu implements Comparable<Stu>{
 	int regno, age;
@@ -96,47 +96,47 @@ public class comparable_demo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			ArrayList<Stu> studList = new ArrayList<Stu>();
-			
-			studList.add(new Stu(1001,"Tin",22));
-			studList.add(new Stu(1002,"Tom",21));
-			studList.add(new Stu(1004,"Tim",22));
-			studList.add(new Stu(1003,"Tam",23));
-			
-			System.out.println("== No Sort ==");
-			for(Stu b:studList) {
-				b.display();
-			}
-			System.out.println();
-			System.out.println("== Basic Sort ==");
-			Collections.sort(studList);
-			for(Stu b:studList) {
-				b.display();
-			}
-			System.out.println();
-			System.out.println("== Name Sort ==");
-			Collections.sort(studList,new nameCompare());
-			for(Stu b:studList) {
-				b.display();
-			}
-			System.out.println();
-			System.out.println("== RegNo Sort ==");
-			Collections.sort(studList,new regCompare());
-			for(Stu b:studList) {
-				b.display();
-			}
-			System.out.println();
-			System.out.println("== Age Sort ==");
-			Collections.sort(studList,new ageCompare());
-			for(Stu b:studList) {
-				b.display();
-			}
-			System.out.println();
-			System.out.println("== Age,Name Sort ==");
-			Collections.sort(studList,new ageNameCompare());
-			for(Stu b:studList) {
-				b.display();
-			}
+		ArrayList<Stu> studList = new ArrayList<Stu>();
+		
+		studList.add(new Stu(1001,"Tin",22));
+		studList.add(new Stu(1002,"Tom",21));
+		studList.add(new Stu(1004,"Tim",22));
+		studList.add(new Stu(1003,"Tam",23));
+		
+		System.out.println("== No Sort ==");
+		for(Stu b:studList) {
+			b.display();
+		}
+		System.out.println();
+		System.out.println("== Basic Sort ==");
+		Collections.sort(studList);
+		for(Stu b:studList) {
+			b.display();
+		}
+		System.out.println();
+		System.out.println("== Name Sort ==");
+		Collections.sort(studList,new nameCompare());
+		for(Stu b:studList) {
+			b.display();
+		}
+		System.out.println();
+		System.out.println("== RegNo Sort ==");
+		Collections.sort(studList,new regCompare());
+		for(Stu b:studList) {
+			b.display();
+		}
+		System.out.println();
+		System.out.println("== Age Sort ==");
+		Collections.sort(studList,new ageCompare());
+		for(Stu b:studList) {
+			b.display();
+		}
+		System.out.println();
+		System.out.println("== Age,Name Sort ==");
+		Collections.sort(studList,new ageNameCompare());
+		for(Stu b:studList) {
+			b.display();
+		}
 	}
 
 }

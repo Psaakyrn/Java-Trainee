@@ -29,8 +29,8 @@ public class set_demo {
 		LinkedHashSet<String> emp1 = new LinkedHashSet<String>();
 		emp1.add("1212");
 		emp1.add("Cook");
-		emp1.add("Book");
 		emp1.add("Dook");
+		emp1.add("Book");
 		emp1.add("Dook");
 		emp1.add(null);
 		emp1.add("????!?");
