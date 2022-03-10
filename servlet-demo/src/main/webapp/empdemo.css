@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+table, th, td{
+border: 2px double red;
+}
+
+table{
+width: 30%;
+border-collapse: collapse;
+}
+th{
+height:50px;
+}
+
+tr:hover td{
+background-color: red;
+}
+tr:hover td:nth-child(even){
+background-color: pink;
+}
+td:nth-child(odd):hover{
+background-color: yellow;
+}
+td:nth-child(even){
+background-color: cyan;
+}
+td:nth-child(even) hover{
+background-color: red;
+}

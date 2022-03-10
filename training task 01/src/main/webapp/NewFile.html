@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+body{
+	background-image: url("bg.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+ul{
+list-style: square;
+}
+li ul{
+list-style: circle;
+background: pink;
+}
+ol {
+list-style: upper-roman;
+background: yellow;
+}
+ol li{
+background: cyan;
+}
+li.no{
+background: lightgreen;
+}
+
+table, th, td{
+border: 2px double red;
+}
+
+table{
+width: 30%;
+border-collapse: collapse;
+}
+th{
+height:50px;
+}
+
+tr:hover td{
+background-color: red;
+}
+tr:hover td:nth-child(even){
+background-color: pink;
+}
+td:nth-child(odd):hover{
+background-color: yellow;
+}
+td:nth-child(even){
+background-color: cyan;
+}
+td:nth-child(even) hover{
+background-color: red;
+}
+
+</style>
+</head>
+<body>
+<ol><!-- default numbers -->
+	<li>rer</li>
+	<li>rer
+		<ul>
+			<li>rerer</li>
+			<li class="no">rerer</li>
+		</ul>
+	</li>
+	<li>rer</li>
+	<li class="no">rer
+		<ul>
+		<li>rerer</li>
+		<li class="no">rerer</li>
+	</ul>
+	</li>
+</ol>
+
+<ul><!-- default circles -->
+<li>rer</li>
+<li>rer</li>
+</ul>
+<dl>
+<dt>html</dt>
+<dd>html markup language</dd>
+</dl>
+<table>
+<thead>
+<caption>Detailz</caption>
+<tr>
+<th>Regno</th>
+<th>Name</th>
+<th>Marks</th>
+</tr>
+</thead>
+
+<tr>
+<td>001</td>
+<td>Jon</td>
+<td>32</td>
+</tr>
+
+<tr>
+<td>002</td>
+<td>Jane</td>
+<td>82</td>
+</tr>
+
+<tr>
+<td>005</td>
+<td>Tim</td>
+<td>328</td>
+</tr>
+
+</table>
+</body>
+</html>

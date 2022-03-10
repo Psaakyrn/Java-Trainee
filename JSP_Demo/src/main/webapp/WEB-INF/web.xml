@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <servlet>
+    <description></description>
+    <display-name>myConfigDisplayName</display-name> <!-- display name for external use, optional -->
+    <servlet-name>myConfig</servlet-name> <!-- name of servlet -->
+    <jsp-file>/config.jsp</jsp-file> <!-- name of jsp file -->
+    
+    <init-param>  
+  	  <param-name>dbname</param-name>  
+  	  <param-value>com.mysql.cj.jdbc.Driver</param-value>  
+  	</init-param>
+  </servlet>
+  <servlet-mapping>  
+	<servlet-name>myConfig</servlet-name> <!-- name of servlet -->
+	<url-pattern>/config</url-pattern> <!-- url to map to -->
+  </servlet-mapping> 
+  <servlet>
+    <description></description>
+    <display-name>myAppDisplayName</display-name> <!-- display name for external use, optional -->
+    <servlet-name>myApp</servlet-name> <!-- name of servlet -->
+    <jsp-file>/app_ex.jsp</jsp-file> <!-- name of jsp file -->
+    
+    <init-param>  
+  	  <param-name>dbname</param-name>  
+  	  <param-value>com.mysql.cj.jdbc.Driver</param-value>  
+  	</init-param>
+  </servlet>
+  <servlet-mapping>  
+	<servlet-name>myApp</servlet-name> <!-- name of servlet -->
+	<url-pattern>/app_ex</url-pattern> <!-- url to map to -->
+  </servlet-mapping> 
+  <context-param>  
+  	<param-name>dbName</param-name>  
+  	<param-value>com.mysql.cj.jdbc.Driver</param-value>  
+  </context-param>
+  <error-page>  
+    <!-- <exception-type>java.lang.Exception</exception-type>  -->
+    <error-code>404</error-code>
+  	<location>/error404.jsp</location>  
+  </error-page> 
+   <error-page>  
+    <exception-type>java.lang.Exception</exception-type>
+  	<location>/error.jsp</location>  
+  </error-page> 
+ </web-app>
