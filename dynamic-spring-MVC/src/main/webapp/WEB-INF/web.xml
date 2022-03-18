@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+	id="WebApp_ID" version="4.0">
+	
+	<display-name>Dynamic-Spring-Demo</display-name>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>  
+  	  <param-name>contextConfigLocation</param-name>  
+  	  <param-value>/WEB-INF/spring-servlet.xml</param-value>  
+  	</context-param>
+  <servlet>
+    <description></description>
+    <display-name>springDisplayName</display-name> <!-- display name for external use, optional -->
+    <servlet-name>spring</servlet-name> <!-- name of servlet -->
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+    
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>  
+	<servlet-name>spring</servlet-name> <!-- name of servlet -->
+	<url-pattern>/</url-pattern> <!-- url to map to -->
+  </servlet-mapping> 
+  
+  </web-app>

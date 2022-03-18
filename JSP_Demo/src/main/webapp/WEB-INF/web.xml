@@ -35,7 +35,6 @@
   	<param-value>com.mysql.cj.jdbc.Driver</param-value>  
   </context-param>
   <error-page>  
-    <!-- <exception-type>java.lang.Exception</exception-type>  -->
     <error-code>404</error-code>
   	<location>/error404.jsp</location>  
   </error-page> 
@@ -43,4 +42,9 @@
     <exception-type>java.lang.Exception</exception-type>
   	<location>/error.jsp</location>  
   </error-page> 
+  <welcome-file-list>
+  	<welcome-file>
+  	/tag_lib.jsp
+  	</welcome-file>
+  </welcome-file-list>
  </web-app>

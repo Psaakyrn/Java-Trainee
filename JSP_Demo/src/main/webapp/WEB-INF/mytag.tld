@@ -1,0 +1,17 @@
+<taglib>
+	 <tlib-version>1.0</tlib-version>
+	 <jsp-version>2.0</jsp-version>
+	 <short-name>My first custom tag</short-name>
+ 	 <uri>helloTags</uri>
+
+	 <tag>
+	    <name>ctag</name>
+	    <tag-class>tags.MyCustomTag</tag-class>
+	    <body-content>empty</body-content>
+	 </tag>
+	 <tag>
+	    <name>cdate</name>
+	    <tag-class>tags.PrintDate</tag-class>
+	    <body-content>empty</body-content>
+	 </tag>
+</taglib>
